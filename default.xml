@@ -11,7 +11,7 @@
   <remote  name="github"
            fetch="https://github.com/" />
 
-  <remote  name="nougat"
+  <remote  name="nougat" 
            revision="ng"
            fetch="https://github.com/LiquidNougat/" />
 
@@ -189,7 +189,7 @@
   <project path="external/libopus" name="platform/external/libopus" groups="pdk" />
   <project path="external/libpcap" name="platform/external/libpcap" groups="pdk,pdk-cw-fs,pdk-fs" />
   <project path="external/libphonenumber" name="platform/external/libphonenumber" groups="pdk-cw-fs,pdk-fs" />
-  <project path="external/libpng" name="external_libpng" groups="pdk" remote="nougat" />
+  <project path="external/libpng" name="external_libpng" groups="pdk" remote="uber" />
   <project path="external/libselinux" name="platform/external/libselinux" groups="pdk" />
   <project path="external/libunwind" name="platform/external/libunwind" groups="pdk" />
   <project path="external/libunwind_llvm" name="external_libunwind_llvm" remote="nougat" />
