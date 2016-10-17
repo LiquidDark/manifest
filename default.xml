@@ -5,22 +5,22 @@
            fetch="https://android.googlesource.com/" />
 
   <remote  name="despair"
-           revision = "master"
+           revision="master"
            fetch="https://bitbucket.org/DespairFactor/" />
 
   <remote  name="github"
            fetch="https://github.com/" />
 
   <remote  name="nougat"
-           revision = "ng"
+           revision="ng"
            fetch="https://github.com/LiquidNougat/" />
 
   <remote  name="uber"
-           revision = "master"
+           revision="master"
            fetch="https://github.com/UBERROMS/" />
 
   <remote  name="xanax"
-           revision = "nougat"
+           revision="nougat"
            fetch="https://github.com/BenzoRoms/" />
 
   <default revision="refs/tags/android-7.0.0_r13"
