@@ -11,6 +11,7 @@
            fetch="https://github.com/" />
 
   <remote  name="nougat"
+           revision = "ng"
            fetch="https://github.com/LiquidNougat/" />
 
   <default revision="refs/tags/android-7.0.0_r13"
@@ -18,21 +19,21 @@
            sync-c="true"
            sync-j="8" />
 
-  <project path="build" name="build" groups="pdk,tradefed" remote="nougat" revision="ng" >
+  <project path="build" name="build" groups="pdk,tradefed" remote="nougat" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="build/blueprint" name="platform/build/blueprint" groups="pdk,tradefed" />
   <project path="build/kati" name="platform/build/kati" groups="pdk,tradefed" />
-  <project path="build/soong" name="build_soong" groups="pdk,tradefed" remote="nougat" revision="ng" >
+  <project path="build/soong" name="build_soong" groups="pdk,tradefed" remote="nougat" >
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
-  <project path="art" name="art" groups="pdk" remote="nougat" revision="ng" />
-  <project path="bionic" name="bionic" groups="pdk" remote="nougat" revision="ng" />
+  <project path="art" name="art" groups="pdk" remote="nougat" />
+  <project path="bionic" name="bionic" groups="pdk" remote="nougat" />
   <project path="bootable/recovery" name="platform/bootable/recovery" groups="pdk" />
   <project path="cts" name="platform/cts" groups="cts,pdk-cw-fs,pdk-fs" />
-  <project path="dalvik" name="dalvik" groups="pdk-cw-fs,pdk-fs" remote="nougat" revision="ng" />
+  <project path="dalvik" name="dalvik" groups="pdk-cw-fs,pdk-fs" remote="nougat" />
   <project path="developers/build" name="platform/developers/build" />
   <project path="developers/demos" name="platform/developers/demos" />
   <project path="developers/samples/android" name="platform/developers/samples/android" />
@@ -61,7 +62,7 @@
   <project path="external/boringssl" name="platform/external/boringssl" groups="pdk" />
   <project path="external/bouncycastle" name="platform/external/bouncycastle" groups="pdk" />
   <project path="external/bsdiff" name="platform/external/bsdiff" groups="pdk" />
-  <project path="external/busybox" name="external_busybox" groups="pdk" remote="nougat" revision="ng" />
+  <project path="external/busybox" name="external_busybox" groups="pdk" remote="nougat" />
   <project path="external/bzip2" name="platform/external/bzip2" groups="pdk" />
   <project path="external/c-ares" name="platform/external/c-ares" />
   <project path="external/caliper" name="platform/external/caliper" />
@@ -122,7 +123,7 @@
   <project path="external/google-tv-pairing-protocol" name="platform/external/google-tv-pairing-protocol" groups="pdk-fs" />
   <project path="external/gptfdisk" name="platform/external/gptfdisk" groups="pdk-fs" />
   <project path="external/gtest" name="platform/external/gtest" groups="pdk" />
-  <project path="external/guava" name="external_guava" groups="pdk-cw-fs,pdk-fs" remote="nougat" revision="ng" />
+  <project path="external/guava" name="external_guava" groups="pdk-cw-fs,pdk-fs" remote="nougat" />
   <project path="external/guice" name="platform/external/guice" groups="pdk" />
   <project path="external/hamcrest" name="platform/external/hamcrest" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/harfbuzz_ng" name="platform/external/harfbuzz_ng" groups="pdk,qcom_msm8x26" />
@@ -179,10 +180,10 @@
   <project path="external/libopus" name="platform/external/libopus" groups="pdk" />
   <project path="external/libpcap" name="platform/external/libpcap" groups="pdk,pdk-cw-fs,pdk-fs" />
   <project path="external/libphonenumber" name="platform/external/libphonenumber" groups="pdk-cw-fs,pdk-fs" />
-  <project path="external/libpng" name="external_libpng" groups="pdk" remote="nougat" revision="ng" />
+  <project path="external/libpng" name="external_libpng" groups="pdk" remote="nougat" />
   <project path="external/libselinux" name="platform/external/libselinux" groups="pdk" />
   <project path="external/libunwind" name="platform/external/libunwind" groups="pdk" />
-  <project path="external/libunwind_llvm" name="external_libunwind_llvm" remote="nougat" revision="ng" />
+  <project path="external/libunwind_llvm" name="external_libunwind_llvm" remote="nougat" />
   <project path="external/libusb" name="platform/external/libusb" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/libusb-compat" name="platform/external/libusb-compat" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/libutf" name="platform/external/libutf" groups="pdk-cw-fs,pdk-fs" />
@@ -233,7 +234,7 @@
   <project path="external/pdfium" name="platform/external/pdfium" groups="pdk" />
   <project path="external/piex" name="platform/external/piex" />
   <project path="external/ppp" name="platform/external/ppp" groups="pdk-cw-fs,pdk-fs" />
-  <project path="external/proguard" name="external_proguard" groups="pdk" remote="nougat" revision="ng" />
+  <project path="external/proguard" name="external_proguard" groups="pdk" remote="nougat" />
   <project path="external/protobuf" name="platform/external/protobuf" groups="pdk" />
   <project path="external/regex-re2" name="platform/external/regex-re2" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/replicaisland" name="platform/external/replicaisland" groups="pdk-cw-fs,pdk-fs" />
@@ -246,7 +247,7 @@
   <project path="external/selinux" name="platform/external/selinux" groups="pdk" />
   <project path="external/shflags" name="platform/external/shflags" groups="pdk" />
   <project path="external/sfntly" name="platform/external/sfntly" groups="pdk,qcom_msm8x26" />
-  <project path="external/skia" name="external_skia" groups="pdk,qcom_msm8x26" remote="nougat" revision="ng" />
+  <project path="external/skia" name="external_skia" groups="pdk,qcom_msm8x26" remote="nougat" />
   <project path="external/sl4a" name="platform/external/sl4a" />
   <project path="external/slf4j" name="platform/external/slf4j" groups="pdk-fs" />
   <project path="external/smali" name="platform/external/smali" groups="pdk-cw-fs,pdk-fs" />
@@ -254,7 +255,7 @@
   <project path="external/sonic" name="platform/external/sonic" groups="pdk" />
   <project path="external/sonivox" name="platform/external/sonivox" groups="pdk" />
   <project path="external/speex" name="platform/external/speex" groups="pdk" />
-  <project path="external/sqlite" name="external_sqlite" groups="pdk" remote="nougat" revision="ng" />
+  <project path="external/sqlite" name="external_sqlite" groups="pdk" remote="nougat" />
   <project path="external/squashfs-tools" name="platform/external/squashfs-tools" groups="pdk" />
   <project path="external/srtp" name="platform/external/srtp" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/strace" name="platform/external/strace" groups="pdk-cw-fs,pdk-fs" />
@@ -287,16 +288,16 @@
   <project path="external/zlib" name="platform/external/zlib" groups="pdk" />
   <project path="external/zopfli" name="platform/external/zopfli" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/zxing" name="platform/external/zxing" groups="pdk-cw-fs,pdk-fs" />
-  <project path="frameworks/av" name="frameworks_av" groups="pdk" remote="nougat" revision="ng" />
-  <project path="frameworks/base" name="frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="nougat" revision="ng" />
+  <project path="frameworks/av" name="frameworks_av" groups="pdk" remote="nougat" />
+  <project path="frameworks/base" name="frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="nougat" />
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" groups="pdk" />
   <project path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" groups="pdk" />
   <project path="frameworks/compile/slang" name="platform/frameworks/compile/slang" groups="pdk" />
-  <project path="frameworks/ex" name="frameworks_ex" groups="pdk-cw-fs,pdk-fs" remote="nougat" revision="ng" />
+  <project path="frameworks/ex" name="frameworks_ex" groups="pdk-cw-fs,pdk-fs" remote="nougat" />
   <project path="frameworks/minikin" name="platform/frameworks/minikin" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/ml" name="platform/frameworks/ml" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/multidex" name="platform/frameworks/multidex" groups="pdk-cw-fs,pdk-fs" />
-  <project path="frameworks/native" name="frameworks_native" groups="pdk" remote="nougat" revision="ng" />
+  <project path="frameworks/native" name="frameworks_native" groups="pdk" remote="nougat" />
   <project path="frameworks/opt/bitmap" name="platform/frameworks/opt/bitmap" groups="pdk-fs" />
   <project path="frameworks/opt/bluetooth" name="platform/frameworks/opt/bluetooth" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/opt/calendar" name="platform/frameworks/opt/calendar" groups="pdk-cw-fs,pdk-fs" />
@@ -312,11 +313,11 @@
   <project path="frameworks/opt/net/wifi" name="platform/frameworks/opt/net/wifi" groups="pdk" />
   <project path="frameworks/opt/photoviewer" name="platform/frameworks/opt/photoviewer" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/opt/setupwizard" name="platform/frameworks/opt/setupwizard" groups="pdk-cw-fs,pdk-fs" />
-  <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" groups="pdk" remote="nougat" revision="ng" />
+  <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" groups="pdk" remote="nougat" />
   <project path="frameworks/opt/timezonepicker" name="platform/frameworks/opt/timezonepicker" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/opt/vcard" name="platform/frameworks/opt/vcard" groups="pdk-cw-fs,pdk-fs" />
-  <project path="frameworks/rs" name="frameworks_rs" groups="pdk" remote="nougat" revision="ng" />
-  <project path="frameworks/support" name="frameworks_support" groups="pdk-cw-fs,pdk-fs" remote="nougat" revision="ng" />
+  <project path="frameworks/rs" name="frameworks_rs" groups="pdk" remote="nougat" />
+  <project path="frameworks/support" name="frameworks_support" groups="pdk-cw-fs,pdk-fs" remote="nougat" />
   <project path="frameworks/data-binding" name="platform/frameworks/data-binding" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/volley" name="platform/frameworks/volley" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/webview" name="platform/frameworks/webview" groups="pdk-cw-fs,pdk-fs" />
@@ -340,18 +341,18 @@
   <project path="hardware/qcom/power" name="platform/hardware/qcom/power" groups="qcom" />
   <project path="hardware/qcom/wlan" name="platform/hardware/qcom/wlan" groups="qcom_wlan" />
   <project path="hardware/ril" name="platform/hardware/ril" groups="pdk" />
-  <project path="libcore" name="libcore" groups="pdk" remote="nougat" revision="ng" />
+  <project path="libcore" name="libcore" groups="pdk" remote="nougat" />
   <project path="libnativehelper" name="platform/libnativehelper" groups="pdk" />
   <project path="packages/apps/BasicSmsReceiver" name="platform/packages/apps/BasicSmsReceiver" groups="pdk-cw-fs,pdk-fs" />
-  <project path="packages/apps/Bluetooth" name="packages_apps_Bluetooth" groups="pdk-cw-fs,pdk-fs" remote="nougat" revision="ng" />
+  <project path="packages/apps/Bluetooth" name="packages_apps_Bluetooth" groups="pdk-cw-fs,pdk-fs" remote="nougat" />
   <project path="packages/apps/Camera2" name="platform/packages/apps/Camera2" groups="pdk-fs" />
   <project path="packages/apps/CarrierConfig" name="platform/packages/apps/CarrierConfig" groups="pdk-fs" />
   <project path="packages/apps/CellBroadcastReceiver" name="platform/packages/apps/CellBroadcastReceiver" groups="pdk-fs" />
   <project path="packages/apps/CertInstaller" name="platform/packages/apps/CertInstaller" groups="pdk-cw-fs,pdk-fs" />
-  <project path="packages/apps/Contacts" name="packages_apps_Contacts" groups="pdk-fs" remote="nougat" revision="ng" />
-  <project path="packages/apps/ContactsCommon" name="packages_apps_ContactsCommon" groups="pdk-fs" remote="nougat" revision="ng" />
+  <project path="packages/apps/Contacts" name="packages_apps_Contacts" groups="pdk-fs" remote="nougat" />
+  <project path="packages/apps/ContactsCommon" name="packages_apps_ContactsCommon" groups="pdk-fs" remote="nougat" />
   <project path="packages/apps/DevCamera" name="platform/packages/apps/DevCamera" groups="pdk" />
-  <project path="packages/apps/Dialer" name="packages_apps_Dialer" groups="pdk-fs" remote="nougat" revision="ng" />
+  <project path="packages/apps/Dialer" name="packages_apps_Dialer" groups="pdk-fs" remote="nougat" />
   <project path="packages/apps/EmergencyInfo" name="platform/packages/apps/EmergencyInfo" />
   <project path="packages/apps/Gallery2" name="platform/packages/apps/Gallery2" groups="pdk-fs" />
   <project path="packages/apps/HTMLViewer" name="platform/packages/apps/HTMLViewer" groups="pdk-fs" />
@@ -359,12 +360,12 @@
   <project path="packages/apps/Launcher3" name="platform/packages/apps/Launcher3" groups="pdk-fs" />
   <project path="packages/apps/ManagedProvisioning" name="platform/packages/apps/ManagedProvisioning" groups="pdk-fs" />
   <project path="packages/apps/masquerade" name="TeamSubstratum/masquerade" groups="pdk-fs" remote="github" revision="master" />
-  <project path="packages/apps/Nfc" name="packages_apps_Nfc" groups="apps_nfc,pdk-fs" remote="nougat" revision="ng" />
+  <project path="packages/apps/Nfc" name="packages_apps_Nfc" groups="apps_nfc,pdk-fs" remote="nougat" />
   <project path="packages/apps/OneTimeInitializer" name="platform/packages/apps/OneTimeInitializer" groups="pdk-fs" />
-  <project path="packages/apps/PackageInstaller" name="packages_apps_PackageInstaller" groups="pdk-fs" remote="nougat" revision="ng" />
+  <project path="packages/apps/PackageInstaller" name="packages_apps_PackageInstaller" groups="pdk-fs" remote="nougat" />
   <project path="packages/apps/Phone" name="platform/packages/apps/Phone" groups="pdk-fs" />
   <project path="packages/apps/PhoneCommon" name="platform/packages/apps/PhoneCommon" groups="pdk-cw-fs,pdk-fs" />
-  <project path="packages/apps/Settings" name="packages_apps_Settings" groups="pdk-fs" remote="nougat" revision="ng" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" groups="pdk-fs" remote="nougat" />
   <project path="packages/apps/SoundRecorder" name="platform/packages/apps/SoundRecorder" groups="pdk-fs" />
   <project path="packages/apps/SpeechRecorder" name="platform/packages/apps/SpeechRecorder" groups="pdk-fs" />
   <project path="packages/apps/Stk" name="platform/packages/apps/Stk" groups="apps_stk,pdk-fs" />
@@ -374,17 +375,17 @@
   <project path="packages/apps/TV" name="platform/packages/apps/TV" />
   <project path="packages/apps/UnifiedEmail" name="platform/packages/apps/UnifiedEmail" groups="pdk-fs" />
   <project path="packages/experimental" name="platform/packages/experimental" />
-  <project path="packages/inputmethods/LatinIME" name="packages_inputmethods_LatinIME" groups="pdk-fs" remote="nougat" revision="ng" />
+  <project path="packages/inputmethods/LatinIME" name="packages_inputmethods_LatinIME" groups="pdk-fs" remote="nougat" />
   <project path="packages/providers/ApplicationsProvider" name="platform/packages/providers/ApplicationsProvider" groups="pdk-fs" />
   <project path="packages/providers/BlockedNumberProvider" name="platform/packages/providers/BlockedNumberProvider" groups="pdk-fs" />
   <project path="packages/providers/BookmarkProvider" name="platform/packages/providers/BookmarkProvider" groups="pdk-fs" />
   <project path="packages/providers/CalendarProvider" name="platform/packages/providers/CalendarProvider" groups="pdk-cw-fs,pdk-fs" />
   <project path="packages/providers/CallLogProvider" name="platform/packages/providers/CallLogProvider" groups="pdk-fs" />
   <project path="packages/providers/ContactsProvider" name="platform/packages/providers/ContactsProvider" groups="pdk-cw-fs,pdk-fs" />
-  <project path="packages/providers/DownloadProvider" name="packages_providers_DownloadProvider" groups="pdk-cw-fs,pdk-fs" remote="nougat" revision="ng" />
-  <project path="packages/providers/MediaProvider" name="packages_providers_MediaProvider" groups="pdk-cw-fs,pdk-fs" remote="nougat" revision="ng" />
+  <project path="packages/providers/DownloadProvider" name="packages_providers_DownloadProvider" groups="pdk-cw-fs,pdk-fs" remote="nougat" />
+  <project path="packages/providers/MediaProvider" name="packages_providers_MediaProvider" groups="pdk-cw-fs,pdk-fs" remote="nougat" />
   <project path="packages/providers/PartnerBookmarksProvider" name="platform/packages/providers/PartnerBookmarksProvider" groups="pdk-fs" />
-  <project path="packages/providers/TelephonyProvider" name="packages_providers_TelephonyProvider" groups="pdk-cw-fs,pdk-fs" remote="nougat" revision="ng" />
+  <project path="packages/providers/TelephonyProvider" name="packages_providers_TelephonyProvider" groups="pdk-cw-fs,pdk-fs" remote="nougat" />
   <project path="packages/providers/TvProvider" name="platform/packages/providers/TvProvider" groups="pdk-fs" />
   <project path="packages/providers/UserDictionaryProvider" name="platform/packages/providers/UserDictionaryProvider" groups="pdk-cw-fs,pdk-fs" />
   <project path="packages/screensavers/Basic" name="platform/packages/screensavers/Basic" groups="pdk-fs" />
@@ -392,8 +393,8 @@
   <project path="packages/screensavers/WebView" name="platform/packages/screensavers/WebView" groups="pdk-fs" />
   <project path="packages/services/Car" name="platform/packages/services/Car" groups="adp8064,pdk-cw-fs,pdk-fs" />
   <project path="packages/services/Mms" name="platform/packages/services/Mms" groups="pdk-cw-fs,pdk-fs" />
-  <project path="packages/services/Telecomm" name="packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" remote="nougat" revision="ng" />
-  <project path="packages/services/Telephony" name="packages_services_Telephony" groups="pdk-cw-fs,pdk-fs" remote="nougat" revision="ng" />
+  <project path="packages/services/Telecomm" name="packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" remote="nougat" />
+  <project path="packages/services/Telephony" name="packages_services_Telephony" groups="pdk-cw-fs,pdk-fs" remote="nougat" />
   <project path="packages/wallpapers/LivePicker" name="platform/packages/wallpapers/LivePicker" groups="pdk-fs" />
   <project path="pdk" name="platform/pdk" groups="pdk" />
   <project path="platform_testing" name="platform/platform_testing" />
@@ -426,17 +427,17 @@
   <project path="system/connectivity/apmanager" name="platform/system/connectivity/apmanager" />
   <project path="system/connectivity/dhcp_client" name="platform/system/connectivity/dhcp_client" />
   <project path="system/connectivity/shill" name="platform/system/connectivity/shill" />
-  <project path="system/core" name="system_core" groups="pdk" remote="nougat" revision="ng" />
-  <project path="system/extras" name="system_extras" groups="pdk" remote="nougat" revision="ng" />
+  <project path="system/core" name="system_core" groups="pdk" remote="nougat" />
+  <project path="system/extras" name="system_extras" groups="pdk" remote="nougat" />
   <project path="system/firewalld" name="platform/system/firewalld" />
   <project path="system/gatekeeper" name="platform/system/gatekeeper" groups="pdk" />
   <project path="system/keymaster" name="platform/system/keymaster" groups="pdk" />
   <project path="system/media" name="platform/system/media" groups="pdk" />
   <project path="system/nativepower" name="platform/system/nativepower" />
-  <project path="system/netd" name="system_netd" groups="pdk" remote="nougat" revision="ng" />
+  <project path="system/netd" name="system_netd" groups="pdk" remote="nougat" />
   <project path="system/nvram" name="platform/system/nvram" />
   <project path="system/security" name="platform/system/security" groups="pdk" />
-  <project path="system/sepolicy" name="system_sepolicy" groups="pdk" remote="nougat" revision="ng" />
+  <project path="system/sepolicy" name="system_sepolicy" groups="pdk" remote="nougat" />
   <project path="system/tools/aidl" name="platform/system/tools/aidl" groups="pdk-cw-fs,pdk-fs" />
   <project path="system/tpm" name="platform/system/tpm" />
   <project path="system/update_engine" name="platform/system/update_engine" />
@@ -458,7 +459,7 @@
   <project path="tools/tradefederation" name="platform/tools/tradefederation" groups="notdefault,tradefed" />
 
   <!-- Angler device -->
-  <project path="device/huawei/angler" name="device_huawei_angler" groups="device,angler,broadcom_pdk" remote="nougat" revision="ng" />
+  <project path="device/huawei/angler" name="device_huawei_angler" remote="nougat" />
 
   <!-- Build toolchain -->
   <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="DespairFactor/aarch64-linux-android-4.9" groups="pdk,linux,arm" remote="bb" revision="master" />
@@ -473,6 +474,6 @@
   <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-6.2" name="DespairFactor/aarch64-linux-android-6.x-kernel-linaro" groups="pdk,linux,arm" remote="bb" revision="master" />
 
   <!-- Nougat vendor -->
-  <project path="vendor/nougat" name="vendor_nougat" remote="nougat" revision="ng" />
+  <project path="vendor/nougat" name="vendor_nougat" remote="nougat" />
 
 </manifest>
