@@ -474,7 +474,7 @@
   <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="aarch64-linux-android-4.9" remote="despair" />
 
   <!-- Huawei vendor -->
-  <project path="vendor/huawei" name="vendor_huawei_angler" remote="xanax" />
+  <project path="vendor/huawei" name="vendor_huawei" remote="uber" />
 
   <!-- Kernel source -->
   <project path="kernel/huawei/angler" name="nathanchance/Ninja-Kernel-Angler" remote="github" revision="release" />
