@@ -14,6 +14,10 @@
            revision = "ng"
            fetch="https://github.com/LiquidNougat/" />
 
+  <remote  name="uber"
+           revision = "master"
+           fetch="https://github.com/UBERROMS/" />
+
   <default revision="refs/tags/android-7.0.0_r13"
            remote="aosp"
            sync-c="true"
