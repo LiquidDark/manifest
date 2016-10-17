@@ -23,7 +23,7 @@
            revision="nougat"
            fetch="https://github.com/BenzoRoms/" />
 
-  <default revision="refs/tags/android-7.0.0_r13"
+  <default revision="refs/tags/android-7.0.0_r14"
            remote="aosp"
            sync-c="true"
            sync-j="8" />
