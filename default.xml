@@ -493,7 +493,8 @@
   <!-- Kernel toolchain -->
   <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-6.2" name="aarch64-linux-android-6.x-kernel-linaro" remote="despair" />
   <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9-kernel" name="aarch64-linux-android-4.9-kernel-linaro" remote="despair" revision="master" />
-
+  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.9" name="arm-eabi-4.9-linaro" remote="despair" revision="master" />
+  
   <!-- Liquid vendor -->
   <project path="vendor/liquid" name="vendor_liquid" remote="ld" revision="ng" />
 
