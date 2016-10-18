@@ -14,10 +14,19 @@
   <remote  name="nougat" 
            revision="ng"
            fetch="https://github.com/LiquidNougat/" />
+           
+  <remote  name="ld"
+           fetch="https://github.com/LiquidDark/" />
+
+  <remote  name="ldd"
+           fetch="https://github.com/LiquidDark-Devices/" />            
 
   <remote  name="uber"
            revision="master"
            fetch="https://github.com/UBERROMS/" />
+           
+  <remote  name="tm"
+           fetch="git://github.com/TheMuppets/" />            
 
   <remote  name="xanax"
            revision="nougat"
@@ -28,7 +37,7 @@
            sync-c="true"
            sync-j="8" />
 
-  <project path="build" name="build" groups="pdk,tradefed" remote="nougat" >
+  <project path="build" name="build" groups="pdk,tradefed" remote="ld" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="build/blueprint" name="platform/build/blueprint" groups="pdk,tradefed" />
@@ -464,23 +473,29 @@
   <project path="tools/test/connectivity" name="platform/tools/test/connectivity" />
   <project path="tools/tradefederation" name="platform/tools/tradefederation" groups="notdefault,tradefed" />
 
-  <!-- Angler device -->
+  <!-- Device -->
   <project path="device/huawei/angler" name="device_huawei_angler" remote="nougat" />
+  <project path="device/lge/bullhead" name="device_lge_bullhead" remote="ldd" revision="ng" />
+  <project path="device/lge/hammerhead" name="device_lge_hammerhead" remote="ldd" revision="n" />
 
   <!-- Build toolchain -->
   <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="aarch64-linux-android-4.9" remote="despair" />
 
-  <!-- Huawei vendor -->
+  <!-- Device vendor -->
   <project path="vendor/huawei" name="vendor_huawei" remote="uber" />
+  <project path="vendor/lge" name="proprietary_vendor_lge" remote="tm" revision="cm-14.0" />   
 
   <!-- Kernel source -->
   <project path="kernel/huawei/angler" name="nathanchance/Ninja-Kernel-Angler" remote="github" revision="release" />
-
+  <project path="kernel/lge/bullhead" name="DespairFactor/bullhead" remote="github" revision="n" />
+  <project path="kernel/lge/hammerhead" name="nitrogen-os-devices/android_kernel_lge_hammerhead" remote="github" revision="n" />
+  
   <!-- Kernel toolchain -->
   <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-6.2" name="aarch64-linux-android-6.x-kernel-linaro" remote="despair" />
+  <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9-kernel" name="aarch64-linux-android-4.9-kernel-linaro" remote="despair" revision="master" />
 
-  <!-- Nougat vendor -->
-  <project path="vendor/nougat" name="vendor_nougat" remote="nougat" />
+  <!-- Liquid vendor -->
+  <project path="vendor/liquid" name="vendor_liquid" remote="ld" />
 
   <!-- UBER clang -->
   <project path="prebuilts/clang/host/linux-x86/3.8" name="uberclang-3.8" remote="despair" />
