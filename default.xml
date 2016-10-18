@@ -37,7 +37,7 @@
            sync-c="true"
            sync-j="8" />
 
-  <project path="build" name="build" groups="pdk,tradefed" remote="ld" >
+  <project path="build" name="build" groups="pdk,tradefed" remote="ld" revision="ng" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="build/blueprint" name="platform/build/blueprint" groups="pdk,tradefed" />
@@ -495,7 +495,7 @@
   <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9-kernel" name="aarch64-linux-android-4.9-kernel-linaro" remote="despair" revision="master" />
 
   <!-- Liquid vendor -->
-  <project path="vendor/liquid" name="vendor_liquid" remote="ld" />
+  <project path="vendor/liquid" name="vendor_liquid" remote="ld" revision="ng" />
 
   <!-- UBER clang -->
   <project path="prebuilts/clang/host/linux-x86/3.8" name="uberclang-3.8" remote="despair" />
