@@ -488,7 +488,7 @@
 
   <!-- Device vendor -->
   <project path="vendor/huawei" name="vendor_huawei" remote="uber" />
-  <project path="vendor/lge" name="proprietary_vendor_lge" remote="tm" revision="cm-14.0" />   
+  <project path="vendor/lge" name="vendor_lge" remote="uber" />   
 
   <!-- Kernel source -->
   <project path="kernel/huawei/angler" name="nathanchance/Ninja-Kernel-Angler" remote="github" revision="release" />
