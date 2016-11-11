@@ -25,6 +25,10 @@
   <remote  name="bb"
            fetch="https://bitbucket.org/" />            
 
+  <remote  name="uber"
+           revision="master"
+           fetch="https://github.com/UBERROMS/" />
+
   <default revision="refs/tags/android-7.1.0_r7"
            remote="aosp"
            sync-c="true"
