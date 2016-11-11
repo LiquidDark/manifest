@@ -14,13 +14,23 @@
   <remote  name="nougat"
            revision="ng"
            fetch="https://github.com/LiquidNougat/" />
+           
+  <remote  name="ld"
+           revision="ng"
+           fetch="https://github.com/LiquidDark/" />
+           
+  <remote  name="ldd"
+           fetch="https://github.com/LiquidDark-Devices/" />
+           
+  <remote  name="bb"
+           fetch="https://bitbucket.org/" />            
 
   <default revision="refs/tags/android-7.1.0_r7"
            remote="aosp"
            sync-c="true"
            sync-j="8" />
 
-  <project path="build" name="build" groups="pdk,tradefed" remote="nougat" >
+  <project path="build" name="build" groups="pdk,tradefed" remote="ld" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="build/blueprint" name="platform/build/blueprint" groups="pdk,tradefed" />
@@ -402,6 +412,10 @@
   <project path="pdk" name="platform/pdk" groups="pdk" />
   <project path="platform_testing" name="platform/platform_testing" />
   <project path="prebuilts/android-emulator" name="platform/prebuilts/android-emulator" groups="pdk-fs" clone-depth="1" />
+  <project path="prebuilts/clang/linux-x86/host/sdclang-3.8" name="sdclang-3.8" remote="mdalexca" />
+  <project path="prebuilts/clang/host/darwin-x86" name="platform/prebuilts/clang/host/darwin-x86" groups="pdk,darwin" />
+  <project path="prebuilts/clang/linux-x86/host/3.6" name="platform/prebuilts/clang/linux-x86/host/3.6" groups="pdk,linux" />
+  <project path="prebuilts/clang/host/linux-x86" name="platform/prebuilts/clang/host/linux-x86" groups="pdk" />
   <project path="prebuilts/clang/host/linux-x86" name="platform/prebuilts/clang/host/linux-x86" groups="pdk" />
   <project path="prebuilts/deqp" name="platform/prebuilts/deqp" groups="pdk-fs" />
   <project path="prebuilts/devtools" name="platform/prebuilts/devtools" groups="pdk-fs" />
@@ -411,14 +425,18 @@
   <project path="prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8" name="platform/prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8" groups="pdk-fs" />
   <project path="prebuilts/gcc/linux-x86/mips/mips64el-linux-android-4.9" name="platform/prebuilts/gcc/linux-x86/mips/mips64el-linux-android-4.9" groups="pdk,linux,mips" />
   <project path="prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" name="platform/prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" groups="pdk,linux,x86" />
+  <project path="prebuilts/gdb/darwin-x86" name="platform/prebuilts/gdb/darwin-x86" groups="darwin" />
   <project path="prebuilts/gdb/linux-x86" name="platform/prebuilts/gdb/linux-x86" groups="linux" />
+  <project path="prebuilts/go/darwin-x86" name="platform/prebuilts/go/darwin-x86" groups="darwin,tradefed" />
   <project path="prebuilts/go/linux-x86" name="platform/prebuilts/go/linux-x86" groups="linux,tradefed" />
   <project path="prebuilts/gradle-plugin" name="platform/prebuilts/gradle-plugin" groups="pdk-cw-fs,pdk-fs" />
   <project path="prebuilts/libs/libedit" name="platform/prebuilts/libs/libedit" groups="pdk-cw-fs,pdk-fs" />
   <project path="prebuilts/maven_repo/android" name="platform/prebuilts/maven_repo/android" groups="pdk-cw-fs,pdk-fs" />
   <project path="prebuilts/misc" name="platform/prebuilts/misc" groups="pdk" />
   <project path="prebuilts/ndk" name="platform/prebuilts/ndk" groups="pdk" />
-  <project path="prebuilts/ninja/linux-x86" name="UBERROMS/prebuilts_ninja_linux-x86" groups="linux,pdk,tradefed" remote="github" revision="master" />
+  <project path="prebuilts/ninja/darwin-x86" name="platform/prebuilts/ninja/darwin-x86" groups="darwin,pdk,tradefed" />
+  <project path="prebuilts/ninja/linux-x86" name="UBERROMS/prebuilts_ninja_linux-x86" remote="github" revision="master" />
+  <project path="prebuilts/python/darwin-x86/2.7.5" name="platform/prebuilts/python/darwin-x86/2.7.5" groups="darwin,pdk,pdk-cw-fs,pdk-fs" />
   <project path="prebuilts/python/linux-x86/2.7.5" name="platform/prebuilts/python/linux-x86/2.7.5" groups="linux,pdk,pdk-cw-fs,pdk-fs" />
   <project path="prebuilts/qemu-kernel" name="platform/prebuilts/qemu-kernel" groups="pdk" clone-depth="1" />
   <project path="prebuilts/sdk" name="platform/prebuilts/sdk" groups="pdk" />
@@ -459,23 +477,30 @@
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
   <project path="tools/test/connectivity" name="platform/tools/test/connectivity" />
   <project path="tools/tradefederation" name="platform/tools/tradefederation" groups="notdefault,tradefed" />
-  <project path="vendor/nougat" name="vendor_nougat" remote="nougat" />
+  <project path="vendor/liquid" name="vendor_liquid" remote="ld" />
 
-  <!-- Angler device -->
+  <!-- Device -->
   <project path="device/huawei/angler" name="device_huawei_angler" remote="nougat" />
+  <project path="device/lge/bullhead" name="device_lge_bullhead-1" remote="ldd" revision="ng" />
+  <project path="device/lge/hammerhead" name="device_lge_hammerhead" remote="ldd" revision="n" />
 
-  <!-- Huawei vendor -->
+  <!-- Device vendor -->
   <project path="vendor/huawei" name="UBERROMS/vendor_huawei" remote="github" revision="master" />
+  <project path="vendor/lge" name="UBERROMS/vendor_lge" remote="github" revision="master" />
 
   <!-- Kernel source -->
   <project path="kernel/huawei/angler" name="Flash-Kernel/angler" remote="github" revision="release" />
-
+  <project path="kernel/lge/bullhead" name="DespairFactor/bullhead" remote="github" revision="n" />
+  <project path="kernel/lge/hammerhead" name="nitrogen-os-devices/android_kernel_lge_hammerhead" remote="github" revision="n2" />
+  
   <!-- UBER clang -->
   <project path="prebuilts/clang/host/linux-x86/uber-3.8" name="uberclang-3.8" remote="mdalexca" />
 
   <!-- UBER tool chains -->
   <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-6.2" name="aarch64-linux-android-6.x-kernel-linaro" remote="mdalexca" />
   <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="aarch64-linux-android-4.9" remote="mdalexca" />
+  <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-4.9-kernel" name="aarch64-linux-android-4.9-kernel" remote="mdalexca" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.9" name="mdalexca/arm-eabi-4.9" remote="bb" />
   <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="arm-linux-androideabi-4.9" remote="mdalexca" />
 
 </manifest>
