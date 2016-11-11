@@ -244,7 +244,7 @@
   <project path="external/owasp/sanitizer" name="platform/external/owasp/sanitizer" groups="pdk-fs" />
   <project path="external/parameter-framework" name="platform/external/parameter-framework" groups="pdk-fs" />
   <project path="external/pcre" name="platform/external/pcre" groups="pdk" />
-  <project path="external/pdfium" name="UBERROMS/external_pdfium" groups="pdk" remote="github" revision="master" />
+  <project path="external/pdfium" name="external_pdfium" groups="pdk" remote="uber" />
   <project path="external/piex" name="platform/external/piex" />
   <project path="external/ppp" name="platform/external/ppp" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/proguard" name="platform/external/proguard" groups="pdk" />
@@ -438,14 +438,14 @@
   <project path="prebuilts/misc" name="platform/prebuilts/misc" groups="pdk" />
   <project path="prebuilts/ndk" name="platform/prebuilts/ndk" groups="pdk" />
   <project path="prebuilts/ninja/darwin-x86" name="platform/prebuilts/ninja/darwin-x86" groups="darwin,pdk,tradefed" />
-  <project path="prebuilts/ninja/linux-x86" name="UBERROMS/prebuilts_ninja_linux-x86" remote="github" revision="master" />
+  <project path="prebuilts/ninja/linux-x86" name="prebuilts_ninja_linux-x86" groups="linux,pdk,tradefed" remote="uber" />
   <project path="prebuilts/python/darwin-x86/2.7.5" name="platform/prebuilts/python/darwin-x86/2.7.5" groups="darwin,pdk,pdk-cw-fs,pdk-fs" />
   <project path="prebuilts/python/linux-x86/2.7.5" name="platform/prebuilts/python/linux-x86/2.7.5" groups="linux,pdk,pdk-cw-fs,pdk-fs" />
   <project path="prebuilts/qemu-kernel" name="platform/prebuilts/qemu-kernel" groups="pdk" clone-depth="1" />
   <project path="prebuilts/sdk" name="platform/prebuilts/sdk" groups="pdk" />
   <project path="prebuilts/tools" name="platform/prebuilts/tools" groups="pdk,tools" />
   <project path="sdk" name="platform/sdk" groups="pdk-cw-fs,pdk-fs" />
-  <project path="system/bt" name="platform/system/bt" groups="pdk" />
+  <project path="system/bt" name="system_bt" groups="pdk" remote="uber" />
   <project path="system/ca-certificates" name="platform/system/ca-certificates" groups="pdk" />
   <project path="system/connectivity/apmanager" name="platform/system/connectivity/apmanager" />
   <project path="system/connectivity/dhcp_client" name="platform/system/connectivity/dhcp_client" />
@@ -488,8 +488,8 @@
   <project path="device/lge/hammerhead" name="device_lge_hammerhead-1" remote="ldd" revision="n" />
 
   <!-- Device vendor -->
-  <project path="vendor/huawei" name="UBERROMS/vendor_huawei" remote="github" revision="master" />
-  <project path="vendor/lge" name="UBERROMS/vendor_lge" remote="github" revision="master" />
+  <project path="vendor/huawei" name="vendor_huawei" remote="github" revision="uber" />
+  <project path="vendor/lge" name="vendor_lge" remote="github" revision="uber" />
 
   <!-- Kernel source -->
   <project path="kernel/huawei/angler" name="mdalexca/angler" remote="github" revision="n" />
