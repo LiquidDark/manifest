@@ -489,7 +489,7 @@
   <project path="vendor/lge" name="UBERROMS/vendor_lge" remote="github" revision="master" />
 
   <!-- Kernel source -->
-  <project path="kernel/huawei/angler" name="Flash-Kernel/angler" remote="github" revision="release" />
+  <project path="kernel/huawei/angler" name="mdalexca/angler" remote="github" revision="n" />
   <project path="kernel/lge/bullhead" name="DespairFactor/bullhead" remote="github" revision="n" />
   <project path="kernel/lge/hammerhead" name="nitrogen-os-devices/android_kernel_lge_hammerhead" remote="github" revision="n2" />
   
