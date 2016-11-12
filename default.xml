@@ -499,7 +499,7 @@
   <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-6.2" name="aarch64-linux-android-6.x-kernel-linaro" remote="mdalexca" />
   <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="aarch64-linux-android-4.9" remote="mdalexca" />
   <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-4.9-kernel" name="aarch64-linux-android-4.9-kernel" remote="mdalexca" />
-  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.9" name="mdalexca/arm-eabi-4.9" remote="bb" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.9" name="arm-eabi-4.9" remote="mdalexca" />
   <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="arm-linux-androideabi-4.9" remote="mdalexca" />
 
 </manifest>
