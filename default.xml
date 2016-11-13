@@ -487,8 +487,8 @@
   <project path="device/lge/hammerhead" name="device_lge_hammerhead-1" remote="ldd" revision="n" />
 
   <!-- Device vendor -->
-  <project path="vendor/huawei" name="vendor_huawei" remote="github" revision="uber" />
-  <project path="vendor/lge" name="vendor_lge" remote="github" revision="uber" />
+  <project path="vendor/huawei" name="vendor_huawei" remote="uber" />
+  <project path="vendor/lge" name="vendor_lge" remote="uber" />
 
   <!-- Kernel source -->
   <project path="kernel/huawei/angler" name="mdalexca/angler" remote="github" revision="n" />
