@@ -4,9 +4,6 @@
   <remote  name="aosp"
            fetch="https://android.googlesource.com/" />
 
-  <remote  name="bb"
-           fetch="https://bitbucket.org/" />
-
   <remote  name="github"
            fetch="https://github.com/" />
 
@@ -450,7 +447,7 @@
   <project path="prebuilts/python/darwin-x86/2.7.5" name="platform/prebuilts/python/darwin-x86/2.7.5" groups="darwin,pdk,pdk-cw-fs,pdk-fs" />
   <project path="prebuilts/python/linux-x86/2.7.5" name="platform/prebuilts/python/linux-x86/2.7.5" groups="linux,pdk,pdk-cw-fs,pdk-fs" />
   <project path="prebuilts/qemu-kernel" name="platform/prebuilts/qemu-kernel" groups="pdk" clone-depth="1" />
-  <project path="prebuilts/sdk" name="xanaxdroid/prebuilts_sdk" groups="pdk" remote="bb" revision="ndotone" />
+  <project path="prebuilts/sdk" name="prebuilts_sdk" groups="pdk" remote="nougat" />
   <project path="prebuilts/tools" name="platform/prebuilts/tools" groups="pdk,tools" />
   <project path="sdk" name="platform/sdk" groups="pdk-cw-fs,pdk-fs" />
   <project path="system/bt" name="system_bt" groups="pdk" remote="uber" />
