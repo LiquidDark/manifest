@@ -500,6 +500,6 @@
   <!-- Kernel source -->
   <project path="kernel/huawei/angler" name="mdalexca/angler" remote="github" revision="n" />
   <project path="kernel/lge/bullhead" name="mdalexca/bullhead" remote="github" revision="n" />
-  <project path="kernel/lge/hammerhead" name="nitrogen-os-devices/android_kernel_lge_hammerhead" remote="github" revision="n2" />
+  <project path="kernel/lge/hammerhead" name="EuclideanOS/android_kernel_lge_hammerhead" remote="github" revision="nougat-dr1" />
 
 </manifest>
