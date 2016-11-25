@@ -492,7 +492,7 @@
   <!-- Device -->
   <project path="device/huawei/angler" name="device_huawei_angler" remote="nougat" />
   <project path="device/lge/bullhead" name="device_lge_bullhead-1" remote="ldd" revision="ng" />
-  <project path="device/lge/hammerhead" name="device_lge_hammerhead" remote="ldd" revision="n" />
+  <project path="device/lge/hammerhead" name="device_lge_hammerhead-1" remote="ldd" revision="n" />
 
   <!-- Device vendor -->
   <project path="vendor/huawei" name="vendor_huawei" remote="uber" />
@@ -501,6 +501,6 @@
   <!-- Kernel source -->
   <project path="kernel/huawei/angler" name="mdalexca/angler" remote="github" revision="n" />
   <project path="kernel/lge/bullhead" name="mdalexca/bullhead" remote="github" revision="n" />
-  <project path="kernel/lge/hammerhead" name="EuclideanOS/android_kernel_lge_hammerhead" remote="github" revision="nougat-dr1" />
+  <project path="kernel/lge/hammerhead" name="nitrogen-os-devices/android_kernel_lge_hammerhead" remote="github" revision="n2" />
 
 </manifest>
