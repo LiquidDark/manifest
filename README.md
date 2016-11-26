@@ -30,7 +30,7 @@ Build Source
 
 Choose Device
 --------------------
-- lunch liquid_angler-userdebug
+- lunch liquid_angler-user
 
 Clean Builds
 --------------------
