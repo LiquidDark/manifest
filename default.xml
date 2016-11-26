@@ -492,7 +492,7 @@
   <!-- Device -->
   <project path="device/huawei/angler" name="device_huawei_angler" remote="nougat" />
   <project path="device/lge/bullhead" name="device_lge_bullhead-1" remote="ldd" revision="ng" />
-  <project path="device/lge/hammerhead" name="device_lge_hammerhead-1" remote="ldd" revision="n" />
+  <project path="device/lge/hammerhead" name="device_lge_hammerhead-1" remote="ldd" revision="n2" />
 
   <!-- Device vendor -->
   <project path="vendor/huawei" name="vendor_huawei" remote="uber" />
