@@ -496,7 +496,9 @@
 
   <!-- Device vendor -->
   <project path="vendor/huawei" name="vendor_huawei" remote="uber" />
-  <project path="vendor/lge" name="vendor_lge" remote="uber" />
+  <project path="vendor/lge/mako" name="vendor_lge_mako" remote="ldd" revision="ng" />
+  <project path="vendor/lge/hammerhead" name="vendor_lge_hammerhead" remote="ldd" revision="ng" />
+  <project path="vendor/lge/bullhead" name="vendor_lge_bullhead" remote="ldd" revision="ng" />
 
   <!-- Kernel source -->
   <project path="kernel/lge/bullhead" name="mdalexca/bullhead" remote="github" revision="n" />
