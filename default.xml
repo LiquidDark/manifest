@@ -84,7 +84,7 @@
   <project path="external/chromium-webview" name="external_chromium-webview" groups="pdk" remote="nougat" />
   <project path="external/clang" name="external_clang" groups="pdk" remote="nougat" />
   <project path="external/cmockery" name="platform/external/cmockery" groups="pdk-fs" />
-  <project path="external/compiler-rt" name="external_compiler-rt" groups="pdk" remote="nougat" />
+  <project path="external/compiler-rt" name="external_compiler-rt" groups="pdk" remote="uber" />
   <project path="external/conscrypt" name="platform/external/conscrypt" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/crcalc" name="platform/external/crcalc" groups="pdk-fs" />
   <project path="external/cros/system_api" name="platform/external/cros/system_api" />
