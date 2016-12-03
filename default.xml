@@ -23,6 +23,7 @@
            fetch="https://github.com/LiquidDark-Devices/" />
            
   <remote  name="bb"
+           revision = "master"
            fetch="https://bitbucket.org/" />            
 
   <remote  name="uber"
