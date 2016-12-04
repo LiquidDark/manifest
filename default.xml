@@ -431,7 +431,8 @@
   <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-4.9" name="aarch64-linux-android-4.9" remote="mdalexca" />
   <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-6.x" name="aarch64-linux-android-6.x" remote="mdalexca" />
   <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-6.x" name="arm-eabi-6.x" remote="mdalexca" />
-  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-6.x" name="uberroms/arm-linux-androideabi-6.x" remote="bb" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.9" name="arm-eabi-4.9" remote="mdalexca" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="uberroms/arm-linux-androideabi-4.9" remote="bb" />ect path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-6.x" name="uberroms/arm-linux-androideabi-6.x" remote="bb" />
   <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8" />
   <project path="prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8" name="platform/prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8" />
   <project path="prebuilts/gcc/linux-x86/mips/mips64el-linux-android-4.9" name="platform/prebuilts/gcc/linux-x86/mips/mips64el-linux-android-4.9" groups="pdk,linux,mips" />
