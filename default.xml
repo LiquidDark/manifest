@@ -25,6 +25,10 @@
   <remote  name="uber"
            revision="master"
            fetch="https://github.com/UBERROMS/" />
+  
+  <remote  name="mdalexca"
+           revision="master"
+           fetch="https://bitbucket.org/mdalexca/" />
 
   <default revision="refs/tags/android-7.1.1_r4"
            remote="aosp"
