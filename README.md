@@ -1,5 +1,10 @@
-LiquidNougat Github
+Liquid Github
 ===================
+
+Thanks
+
+liquid0624
+
 
 Build Environment
 --------------------
@@ -11,9 +16,9 @@ Build Environment
 Initialize Source
 --------------------
 (Assuming you have a valid build environment setup)
-- mkdir nougat (or whatever you want to name the source folder)
-- cd ~/nougat
-- repo init -u https://github.com/LiquidNougat/manifest.git -b ng
+- mkdir liquid (or whatever you want to name the source folder)
+- cd ~/liquid
+- repo init -u https://github.com/LiquidDark/manifest.git -b ng
 
 Sync Source
 --------------------
@@ -25,13 +30,13 @@ Build Source
 
 Choose Device
 --------------------
-- lunch nougat_angler-userdebug
+- lunch liquid_angler-user
 
 Clean Builds
 --------------------
-- cd ~/nougat
+- cd ~/liquid
 - repo sync -jx -f (x being however many cpu jobs, may also use -c as above)
 - lunch and pick the right device (refer to above for choosing right device to build)
 - make clean
-- mka nougat
+- mka liquid
 ﻿
