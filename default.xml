@@ -492,7 +492,7 @@
   <project path="vendor/lge" name="vendor_lge" remote="uber" />  
 
   <!-- Liquid device -->
-  <project path="device/huawei/angler" name="device_huawei_angler" remote="nougat" />
+  <project path="device/huawei/angler" name="device_huawei_angler" remote="ldd" revision="ng" />
   <project path="device/lge/bullhead" name="device_lge_bullhead" remote="ldd" revision="ng" />
 
   <!-- Kernel source -->
