@@ -494,7 +494,7 @@
   <!-- Liquid device -->
   <project path="device/huawei/angler" name="device_huawei_angler" remote="ldd" revision="ng" />
   <project path="device/lge/bullhead" name="device_lge_bullhead" remote="ldd" revision="ng" />
-  <project path="device/lge/hammerhead" name="LiquidDark-Devices/device_lge_hammerhead" remote="ldd" revision="ng" />
+  <project path="device/lge/hammerhead" name="device_lge_hammerhead" remote="ldd" revision="ng" />
 
 
   <!-- Kernel source -->
